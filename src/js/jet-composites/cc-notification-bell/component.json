@@ -1,0 +1,32 @@
+{
+    "name": "cc-notification-bell",
+    "version": "1.0.0",
+    "jetVersion": "^8.3.0",
+    "displayName": "cc-notification-bell component",
+    "description": "A component for notifying the user about any notifications",
+    "properties": {
+        "notfctnObj": {
+            "type": "object"
+        }
+    },
+    "methods": {},
+    "events": {
+        "clearNotifications": {
+            "description": "The event that consuming views can use to clear all notifications",
+            "bubbles": true,
+            "cancelable": false,
+            "detail": {}
+        },
+        "clearSingleNotification": {
+            "description": "The event that consuming views can use to clear single notification",
+            "bubbles": true,
+            "cancelable": false,
+            "detail": {
+                "index": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "slots": {}
+}

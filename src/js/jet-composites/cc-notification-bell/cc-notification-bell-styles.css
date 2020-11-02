@@ -1,0 +1,135 @@
+@import url("resources/css/font-awesome.min.css");
+@import url("resources/fonts/fontawesome-webfont.woff2");
+cc-notification-bell:not(.oj-complete) {
+    visibility: hidden;
+}
+
+cc-notification-bell {
+    min-height: 50px;
+    width: 50px;
+}
+
+
+/* Page Styles */
+
+.container {
+    text-align: center;
+}
+
+
+/* Notifications */
+
+
+/* Setting the background styles, of the bell */
+
+.notification {
+    display: inline-block;
+    position: relative;
+    background: #3498db;
+    border-radius: 0.2em;
+    font-size: 1.3em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 2em;
+    max-height: 5em;
+    height: 1.5em;
+    width: 2em;
+    margin: 2em;
+    padding: 0.25em;
+    cursor: pointer;
+}
+
+.oj-avatar-placeholder {
+    display: none;
+}
+
+
+/* Color of the bell is #fff */
+
+.notification::before,
+.notification::after {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Content below points to the "bell" */
+
+.notification::before,
+.oj-avatar-background-image:before {
+    display: block;
+    content: "\f0f3";
+    font-family: "FontAwesome";
+    transform-origin: top center;
+}
+
+
+/* Styles below are applied to the notification count "balloon" */
+
+.notification::after {
+    font-family: Arial;
+    font-size: 0.7em;
+    font-weight: 700;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    padding: 5px 8px;
+    line-height: 100%;
+    border: 2px #fff solid;
+    border-radius: 60px;
+    background: #3498db;
+    opacity: 0;
+    content: attr(data-count);
+    transform: scale(0.5);
+    transition: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+
+/* bell comes before the "notify" element */
+
+
+/* The pendulum effect is applied to the bell, by the below "ring" animation */
+
+.notification.notify::before {
+    animation: ring 1.5s ease;
+}
+
+
+/* below styles are applied to the number shown inside the notification balloon */
+
+.notification.show-count::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.oj-toolbar {
+    padding: 0 !important;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(35deg);
+    }
+    12.5% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    37.5% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    62.5% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

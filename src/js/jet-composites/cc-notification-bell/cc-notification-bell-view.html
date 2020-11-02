@@ -1,0 +1,34 @@
+<div class="container oj-flex oj-flex-items-initial oj-sm-justify-content-flex-end">
+
+    <div class="notification oj-flex-item oj-sm-1" id="notfctnBell"></div>
+
+    <oj-popup id="notfctnsPopup" auto-dismiss="none" modality="modeless" position.at.horizontal="start" position.at.vertical="bottom" position.collision="none" position.my.horizontal="end" position.my.vertical="top" style="min-height:75px;min-width:75px;"
+        tail="simple">
+        <div class="oj-flex oj-sm-flex-direction-column oj-sm-12 oj-sm-justify-content-flex-end">
+            <oj-bind-if test="[[notifications().length>0]]">
+                <oj-toolbar class="oj-flex-item oj-sm-4" style="display: block;margin-left: auto;">
+                    <oj-button style="display: block;" on-oj-action="[[clearAllNotfctns]]">
+                        <span slot="startIcon" class="oj-fwk-icon oj-fwk-icon-cross02"></span> Clear All</oj-button>
+                </oj-toolbar>
+            </oj-bind-if>
+            <div class="oj-flex-item">
+                <oj-list-view data="[[notificationsDP]]" scroll-policy="loadMoreOnScroll" scroll-policy-options.fetch-size="5" style="max-height:30em;">
+                    <template slot="itemTemplate" data-oj-as="notfctn">
+                  <li>
+                    <div class="oj-flex oj-sm-flex-items-initial oj-sm-justify-content-space-between">
+                        <oj-avatar size="xs" src="" class="oj-flex-item oj-sm-1"></oj-avatar> 
+                        <div class="oj-flex-item oj-sm-8" style="padding-left: 1em;">
+                          <p style="font-weight:bold;"><oj-bind-text value="[[notfctn.data.msg]]"></oj-bind-text></p>
+                          <p><oj-bind-text value="[[notfctn.data.date]]"></oj-bind-text></p>
+                        </div>
+                        <oj-button chroming="half" class="oj-sm-1" style="display: block;" on-oj-action="[[function(){clearNotification(notfctn.index)}]]" display="icons">
+                          <span slot="startIcon" class="oj-fwk-icon oj-fwk-icon-cross02"></span> 
+                        </oj-button>
+                    </oj-list-item-layout>
+                  </li>
+                </template>
+                </oj-list-view>
+            </div>
+        </div>
+    </oj-popup>
+</div>
