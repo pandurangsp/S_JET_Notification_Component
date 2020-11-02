@@ -28,8 +28,13 @@ A custom component which serves the purpose of displaying a UI control, displaye
      
   <ul>
       <li>The notification object, for <i><b>notfctn-obj</b></i>
-            <div>this.notificationObj = {
-                            "notfctnSignal": this.notfctnSignal
-                        }</div></li>
+            <div>this.notificationObj = {"notfctnSignal": this.notfctnSignal}</div>
+            <div>
+                  The information is passed as a JSON object, with just one property.
+                  This property is a signal object, with just one instance. 
+                  Just one instance, and its shared between 2 parties. The parent HTML, and the custom component
+                  This signal is the only way, 2-way communcation infact, between these 2 parties.
+            </div>
+      </li>
   </ul>
           
