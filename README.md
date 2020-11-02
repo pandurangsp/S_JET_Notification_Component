@@ -27,7 +27,7 @@ A custom component which serves the purpose of displaying a UI control, displaye
 <h2>The View Model: Preparing the values for the above attributes</h2>
      
   <ul>
-      <li><b><u>The notification object, for <i>notfctn-obj</u></i></b>
+      <li><h4><u>The notification object, for <i>notfctn-obj</u></i></h4>
             <div>this.notificationObj = {"notfctnSignal": this.notfctnSignal}</div>
             <div>
                   The information is passed as a JSON object, with just one property.
@@ -35,6 +35,9 @@ A custom component which serves the purpose of displaying a UI control, displaye
                   Just one instance, and its shared between 2 parties. The parent HTML, and the custom component
                   This signal is the only way, 2-way communcation infact, between these 2 parties.
             </div>
+      </li>
+      <li>
+            <h4>Signal is prepared; Now trigger it</h4>
       </li>
   </ul>
           
