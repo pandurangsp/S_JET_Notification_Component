@@ -27,7 +27,7 @@ A custom component which serves the purpose of displaying a UI control, displaye
 <h2>The View Model: Preparing the values for the above attributes</h2>
      
   <ul>
-      <li>The notification object, for <i><b>notfctn-obj</b></i>
+      <li><b>The notification object, for <i>notfctn-obj</i></b>
             <div>this.notificationObj = {"notfctnSignal": this.notfctnSignal}</div>
             <div>
                   The information is passed as a JSON object, with just one property.
