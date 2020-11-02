@@ -28,8 +28,8 @@ A custom component which serves the purpose of displaying a UI control, displaye
      
   <ul>
       <li>The notification object, for <i><b>notfctn-obj</b></i>
-            this.notificationObj = {
+            <div>this.notificationObj = {
                             "notfctnSignal": this.notfctnSignal
-                        }</li>
+                        }</div></li>
   </ul>
           
