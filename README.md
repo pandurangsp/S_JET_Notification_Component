@@ -27,6 +27,6 @@ A custom component which serves the purpose of displaying a UI control, displaye
 <h2>The View Model: Preparing the values for the above attributes</h2>
      
   <ul>
-      <li>The notification object, for notfctn-obj</li>
+      <li>The notification object, for <i>notfctn-obj</i></li>
   </ul>
           
