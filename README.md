@@ -39,8 +39,8 @@ A custom component which serves the purpose of displaying a UI control, displaye
       <li>
             <h4>Signal is prepared; Now trigger it</h4>
             <div>ko.computed(() => {</div>
-                            <div>let notfctns = this.notificationList()</div>
-                            <div>this.notificationObj.notfctnSignal.dispatch(notfctns);</div>
+                           &nbsp;&nbsp;&nbsp; <div>let notfctns = this.notificationList()</div>
+                            &nbsp;&nbsp;&nbsp;<div>this.notificationObj.notfctnSignal.dispatch(notfctns);</div>
                         <div>})</div>
       </li>
   </ul>
