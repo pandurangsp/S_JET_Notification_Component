@@ -13,12 +13,12 @@ A custom component which serves the purpose of displaying a UI control, displaye
     <h4>notfctn-obj</h4>
       This holds the information that will be passed to the custom component. 
       
-    <h4>on-clear-notifications</h4>
+<h4>on-clear-notifications</h4>
       This is an event which is raised/dispatched from the Custom Component. 
       This event, as the name itself says, clears or deletes all notifications in the list
       This event will be caught and handled by suitable method in the View Model
       
-     <h4>on-clear-single-notification</h4>
+<h4>on-clear-single-notification</h4>
       This is an event which is raised/dispatched from the Custom Component. 
       This event, as the name itself says, clears or deletes the selected notification in the list
       This event will be caught and handled by suitable method in the View Model
