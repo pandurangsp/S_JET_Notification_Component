@@ -1,11 +1,10 @@
 /jet_components
-/node_modules
 /bower_components
-/web
 /staged-themes
 /themes
 /jaftmp@
-
+/node_modules
+/web
 /hybrid/node_modules
 /hybrid/platforms
 /hybrid/www/*
