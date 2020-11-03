@@ -31,4 +31,6 @@ A custom component which serves the purpose of displaying a UI control, displaye
   <p> The Custom Component (referred as CC going ahead), is a UI control, which provides both, the Data Display and Behavior.</p>
   <p>Data Display includes, displaying the notifications. This includes two things. One, show the total count of notifications and showing the notifications in a list</p>
   <p>The source of notifications, source is nothing but from where these notifications originate, are external to the CC. This means, the notifications come from the PP and are consumed by CC. Thus we follow a <b><i>pub-sub</i></b> pattern here</p>
+  <p>Here, for the purpose of demo, we see three oj-buttons on the PP. When user clicks any one of them, a notification gets created and added to the list. Each time a new notification gets added, the CC is made aware of this change by sending the updated list of notifications. As we read about Signals above, they help in letting the CC know about this change.</p>
+  <p>Also, CC can manage these notifications. Management tasks include, showing and deleting the notifications. User can delete a single or all notifications at once</p>
           
