@@ -26,5 +26,8 @@ A custom component which serves the purpose of displaying a UI control, displaye
          
 <h2>The View Model: Preparing the data & logic, for the above attributes</h2>
      
-  
+  <p>Rather than going through the code, line-by-line, let us understand the logic</p>
+  <p>Signals play a very important role. They enable a two-way communication between the 2 parties here. The parties being the custom component and the parent page, where this custom component is placed upon</p>
+  <p> The Custom Component, referred as CC going ahead, is a UI control, which provides both, the Data Display and Behavior.</p>
+  <p>Data Display includes, displaying the notifications. This includes two things. One, show the total count of notifications and showing the notifications in a list</p>
           
